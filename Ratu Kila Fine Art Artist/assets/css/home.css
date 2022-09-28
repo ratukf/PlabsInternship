@@ -1,0 +1,418 @@
+/*-------------------------------------- FONT IMPORT --------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Quicksand:wght@300;400&display=swap');
+/*-------------------------------------- ALL --------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------------------------- HEADER --------------------------------------*/
+.header {
+    background-image: url(../imgs/homepage.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+}
+
+.header .header1 {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 270px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px;
+}
+
+#paintingof {
+    font-family: 'Merriweather', serif;
+    font-size: 45px;
+    text-shadow: 0px 3px 5px #000;
+}
+
+#realist {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#sharelove {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 125px;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#purchaseyourpainting {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+#purchasebutton {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px 30px 6px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 900px;
+}
+
+#purchasebutton:link {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px 30px 6px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 900px;
+}
+
+#purchasebutton:hover {
+    background-color: #373d3f;
+    transition: .3s;
+    box-shadow: none;
+}
+
+
+/*-------------------------------------- NAVBAR --------------------------------------*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+nav h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.bvrningmoon a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 5px black
+}
+
+.bvrningmoon a:hover {
+    text-decoration: none;
+    opacity: 60%;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover {
+    color: #aba6a1;
+    transition: .3s;
+}
+footer {
+    margin: 25px;
+
+} 
+
+#getyours {
+    color: black;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+
+/*-------------------------------------- MY WORKS --------------------------------------*/
+
+section {
+    width: 80%;
+    margin: 80px auto;   
+    text-align: center; 
+}
+
+.myworkstitle {
+    text-align: center;
+    font-size: 5vmin;
+    font-family: 'Merriweather', serif;
+    color: #373736;
+    margin-bottom: 60px;
+}
+
+.kolommyworks {
+    display: block;
+}
+
+.kolommyworks .col{
+    padding-bottom: 40px;
+}
+
+.col img {
+    max-width: 80%;
+    position: relative;
+    transition: .3s;
+}
+
+.col img:hover {
+    opacity: 80%;
+    transition: .3s;
+    position: relative;
+    transform: scale(120%) rotate(2deg);
+}
+
+.seemorebtn a {
+    padding: 15px;
+    background-color: #373736;
+    border-radius: 5px;
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Quicksand', serif;
+    text-decoration: none;
+    font-weight: 900;
+    text-decoration: none;
+    transition: .3s;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.seemorebtn a:hover {
+    background-color: #aba6a1;
+    border-radius: 5px;
+    transition: .3s;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.seemorebtn a:active {
+    background-color: black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.kolommyworks h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.kolommyworks p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5;
+    font-weight: 300;
+    margin-bottom: 75px;
+}
+
+.col span {
+    position: relative;
+}
+
+.col span:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: #2f2e2c;
+    color: whitesmoke;
+    font-family: 'Quicksand', serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: .5s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .col span:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/*-------------------------------------- ABOUT ME --------------------------------------*/
+
+.aboutmecontent {
+    width: 100%;
+    height: 100vh;
+    background-color: #080807;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.aboutmecontent h1 {
+    padding-top: 40px;
+    color: whitesmoke;
+    font-family: 'Merriweather', serif;
+    font-size: 5vw;
+}
+
+.aboutmecol {
+    display: inline;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    vertical-align: middle;
+}
+
+.aboutmecol img {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.aboutmecol p {
+    font-family: 'Quicksand', serif;
+    color: whitesmoke;
+    font-weight: 300;
+    vertical-align: middle;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+/*-------------------------------------- FOOTER --------------------------------------*/
+
+footer {
+    display: block;
+}
+
+footer .socmed {
+    margin-bottom: 30px;
+}
+
+footer h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #080807;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+footer ul li img {
+    max-width: 90px;
+    transition: .3s;
+}
+
+footer ul li img:hover {
+    transform: scale(110%);
+    opacity: 40%;
+    transition: .3s;
+}
+
+footer .contactme {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    display: inline;
+}
+
+/*-------------------------------------- FOR MOBILE --------------------------------------*/
+@media only screen and (max-width: 850px){
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    nav {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    nav h2 {
+        margin: 30px 30px;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #2f2e2c;
+        margin-right: -1080px;
+        transition: .5s ease;
+    }
+    nav ul li {
+        margin: 30px auto;
+        display: block;
+    }
+
+    .navbar .menu-btn {
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer; 
+    }
+
+    .mobile-menu {
+        margin-right: 0px;
+    }
+
+    .aboutmecol {
+        display: block;
+    }
+
+    .aboutmecol img {
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    .aboutmecol p {
+        font-size: 15px;
+    }
+
+}

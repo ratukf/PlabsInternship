@@ -1,0 +1,87 @@
+/*-------------------------------------- FONT IMPORT --------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Quicksand:wght@300;400&display=swap');
+/*-------------------------------------- ALL --------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------- MAINCONTENT --------------------------------------*/
+
+
+
+/*-------------------------------------- NAVBAR --------------------------------------*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+nav h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.bvrningmoon a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 5px black
+}
+
+.bvrningmoon a:hover {
+    text-decoration: none;
+    opacity: 60%;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+nav ul li a:link {
+    text-decoration: none;
+    color: black;
+
+}
+nav ul li a:hover {
+    color: #aba6a1;
+    transition: .3s;
+}
+
+#getyours {
+    color: black;
+}
+
+.menu-btn {
+    display: none;
+}
