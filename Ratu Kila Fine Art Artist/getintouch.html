@@ -14,9 +14,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/getintouch.css">
 </head>
 <body>
-
-    <script src="scriptgetintouch.js"></script>
-
     <!-------------------------------------- NAVBAR -------------------------------------->
     <nav class="navbar">
         <h2 class="bvrningmoon"><a href="home.html">@bvrningmoon</a></h2>
@@ -40,14 +37,11 @@
                 <div class="right">
                     <h1>Get in Touch</h1>
                     <form>
-                        <ul>
-                            <li><input type="text"></li>
-                            <li><input type="text"></li>
-                            <li><input type="text"></li>
-                        </ul>
-                        <button></button>
+                        <input id="nama" type="text" name="name" placeholder="Name">
+                        <input id="email" type="text" name="email" placeholder="Email">
+                        <textarea id="describe" rows="10" cols="57" name="message" value="Lorem" onclick="this.value=''" placeholder="Enter your message"></textarea> 
                     </form>
-
+                    <input id="submit" type="submit" value="Submit >" id="submit">
                 </div>
         </div>
     </div>

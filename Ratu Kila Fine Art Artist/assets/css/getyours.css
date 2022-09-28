@@ -1,0 +1,272 @@
+/*-------------------------------------- FONT IMPORT --------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Quicksand:wght@300;400&display=swap');
+/*-------------------------------------- ALL --------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------------------------- HEADER --------------------------------------*/
+.header {
+    background-image: url(../imgs/artgallery-darker.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    justify-content: center;
+}
+
+.header1 {
+    padding-top: 120px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.header1 .cntnrbox {
+    max-width: 700px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    vertical-align: middle;
+    border-top: 5px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: flex;
+}
+
+.cntnrbox .left {
+    vertical-align: middle;
+}
+
+
+.cntnrbox .left img {
+    max-width: 150px;
+    margin: 20px;
+    filter: drop-shadow(5px 5px 10px #222);
+}
+
+.cntrbox .right {
+    float: right;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.right h1 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    color: whitesmoke;
+}
+
+.right #nama, #email {
+    display: inline-flex;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+    max-width: 200px;
+}
+
+.right textarea {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    overflow: visible;
+    resize: none;
+    font-size: 12px;
+    font-family: 'Quicksand', serif;
+    border: 1px solid whitesmoke;
+}
+
+.right #submit {
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 900;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.right p {
+    color: whitesmoke;
+    margin: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+}
+
+
+
+/* #purchasebutton {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px 30px 6px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 900px;
+}
+
+#purchasebutton:link {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px 30px 6px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 900px;
+}
+
+#purchasebutton:hover {
+    background-color: #373d3f;
+    transition: .3s;
+    box-shadow: none;
+}
+*/
+
+/*-------------------------------------- NAVBAR --------------------------------------*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+}
+
+
+nav h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.bvrningmoon a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 2px 2px 5px black
+}
+
+.bvrningmoon a:hover {
+    text-decoration: none;
+    opacity: 60%;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover {
+    color: #aba6a1;
+    transition: .3s;
+}
+
+#getyours {
+    color: black;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+/*-------------------------------------- FOR MOBILE --------------------------------------*/
+@media only screen and (max-width: 850px){
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    nav {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    nav h2 {
+        margin: 30px 30px;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #2f2e2c;
+        margin-right: -1080px;
+        transition: .5s ease;
+    }
+    nav ul li {
+        margin: 30px auto;
+        display: block;
+    }
+
+    .navbar .menu-btn {
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer; 
+    }
+
+    .mobile-menu {
+        margin-right: 0px;
+    }
+
+    .cntnrbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .cntnrbox .left img {
+        display: none;
+    }
+
+    .cntnrbox .right {
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+
+
+}
