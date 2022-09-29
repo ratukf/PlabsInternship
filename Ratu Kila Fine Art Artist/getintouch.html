@@ -19,7 +19,7 @@
         <h2 class="bvrningmoon"><a href="home.html">@bvrningmoon</a></h2>
         <ul class="listnavbar">
             <li><br></li>
-            <li class="aboutme"><a href="#aboutme" class="liaboutme">About Me</a></li>
+            <li class="aboutme"><a href="home.html#aboutme" class="liaboutme">About Me</a></li>
             <li class="myworks"><a href="myworks.html" class="limyworks">My Works</a></li>
             <li class="getintouch"><a href="getintouch.html" class="ligetintouch">Get in Touch</a></li>
             <li id="getyours"><a href="getyours.html" class="ligetyours">Get Yours!</a></li>
@@ -41,7 +41,9 @@
                         <input id="email" type="text" name="email" placeholder="Email">
                         <textarea id="describe" rows="10" cols="57" name="message" value="Lorem" onclick="this.value=''" placeholder="Enter your message"></textarea> 
                     </form>
-                    <input id="submit" type="submit" value="Submit >" id="submit">
+                    <div class="sendbtn">
+                        <h4><a href="messagesent.html">Send ></a></h4>
+                    </div>
                 </div>
         </div>
     </div>
@@ -53,9 +55,6 @@
         menuBtn.addEventListener('click',()=>{
             listnavbar.classList.toggle('mobile-menu')
         })
-    </script>    
-
-
-    
+    </script>     
 </body>
 </html>

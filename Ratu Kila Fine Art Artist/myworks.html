@@ -14,12 +14,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/myworks.css">
 </head>
 <body>
-    <section class="hero">
-
-    </section>
-
-
-
     <!-------------------------------------- NAVBAR -------------------------------------->
     <nav class="navbar">
         <h2 class="bvrningmoon"><a href="home.html">@bvrningmoon</a></h2>
@@ -31,26 +25,46 @@
             <li id="getyours"><a href="getyours.html" class="ligetyours">Get Yours!</a></li>
         </ul>
         <img src="./assets/imgs/threelineswhite.png" alt="menubutton" class="menu-btn">
-
     </nav>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const listnavbar = document.querySelector('.listnavbar')
+
+        menuBtn.addEventListener('click',()=>{
+            listnavbar.classList.toggle('mobile-menu')
+        })
+    </script>
+    
     <!-------------------------------------- MAIN PAGE -------------------------------------->
 
     <div class="mainpage">
         <section class="leftimage">
-
+            <img src="assets/imgs/artgallery-darker.jpg">
         </section>
         <section class="rightcontent">
             <section class="uppercontent">
                 <h1>Artwork Project</h1>
-                <ul class="paintinglist">
-                    <li>Pencil</li>
-                    <li>Watercolor</li>
-                    <li>Digital</li>
-                    <li>Acrylic</li>
-                </ul>
             </section>
-            <section class="lowercontent">
-
+            <section id="gallery">
+                <img src="assets/imgs/adele-ratukila.jpg">
+                <img src="assets/imgs/cat1-ratukila.jpg">
+                <img src="assets/imgs/cat2-ratukila.jpg">
+                <img src="assets/imgs/cat3-ratukila.jpg">
+                <img src="assets/imgs/cat4-ratukila.jpg">
+                <img src="assets/imgs/cat6-ratukila.jpg">
+                <img src="assets/imgs/cat6-ratukila.jpg">
+                <img src="assets/imgs/digitalpaint-ratukila.png">
+                <img src="assets/imgs/digitalpaint2-ratukila.png">
+                <img src="assets/imgs/forest-ratukila.jpg">
+                <img src="assets/imgs/jeno-ratukila.jpg">
+                <img src="assets/imgs/kyungsoo-ratukila.jpg">
+                <img src="assets/imgs/lake-ratukila.png">
+                <img src="assets/imgs/pencilportrait1-ratukila.jpg">
+                <img src="assets/imgs/pencilportrait2-ratukila.jpg">
+                <img src="assets/imgs/river-ratukila.jpg">
+                <img src="assets/imgs/sejeong-ratukila.jpg">
+                <img src="assets/imgs/v-ratukila.jpg">           
             </section>
 
         </section>

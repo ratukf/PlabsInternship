@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Yours</title>
+    <title>Get In Touch</title>
     <!-------------------------------------- GOOGLE IMPORT -------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-------------------------------------- CSS IMPORT -------------------------------------->
-    <link rel="stylesheet" type="text/css" href="assets/css/getyours.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/getintouch.css">
 </head>
 <body>
     <!-------------------------------------- NAVBAR -------------------------------------->
@@ -19,7 +19,7 @@
         <h2 class="bvrningmoon"><a href="home.html">@bvrningmoon</a></h2>
         <ul class="listnavbar">
             <li><br></li>
-            <li class="aboutme"><a href="#aboutme" class="liaboutme">About Me</a></li>
+            <li class="aboutme"><a href="home.html#aboutme" class="liaboutme">About Me</a></li>
             <li class="myworks"><a href="myworks.html" class="limyworks">My Works</a></li>
             <li class="getintouch"><a href="getintouch.html" class="ligetintouch">Get in Touch</a></li>
             <li id="getyours"><a href="getyours.html" class="ligetyours">Get Yours!</a></li>
@@ -29,17 +29,9 @@
     </nav>
     <!-------------------------------------- HEADER -------------------------------------->
     <div class="header">
-        <div class="header1">
-            <div class="cntnrbox">
-                <h1>Purchase</h1>
-                <form>
-                    <input id="nama" type="text" name="name" placeholder="Name">
-                    <input id="email" type="text" name="email" placeholder="Email">
-                    <textarea id="describe" rows="10" cols="57" name="message" value="Lorem" onclick="this.value=''" placeholder="Describe your demand here such as what type of painting you wish to order, canvas size, what kind of picture you want me to paint, etc.."></textarea> 
-                </form>
-                <input id="submit" type="submit" value="Submit >" id="submit">
-                <p>After you submit, your message will be replied through email ASAP.</p>   
-            </div>
+        <h1>Your message has been sent!</h1>
+        <div class="backtohomebtn">
+            <h4><a href="home.html">Back to home</a></h4>
         </div>
     </div>
 
@@ -50,9 +42,6 @@
         menuBtn.addEventListener('click',()=>{
             listnavbar.classList.toggle('mobile-menu')
         })
-    </script>    
-
-
-    
+    </script>     
 </body>
 </html>
