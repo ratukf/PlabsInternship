@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <!--extracting string parts-->
+    <!--ini adlah metoda yang digunakan untuk membelah string menjadi dua bagian-->
+
+    <p id="demo"></p>
+
+    <script>
+        //string.slice(start,end)
+        let fruit = "Apel, Lemon, Melon";
+        let fruitPart = fruit.slice(6,11);
+        document.getElementById("demo").innerHTML = fruitPart;
+
+        // sama seperti python, indeks string bisa dibalik
+    </script>
+
+    <h2>Mengganti string tertentu</h2>
+    <button onclick="myFunction()">Klik tombol ini 2x</button>
+    <p id="demo2">Selamat datang di javascript javascript</p>
+
+    <script>
+        //substring(start, end)
+        //pada substring, nilai negatif dianggap 0
+        //substr(start, length)
+        function myFunction() {
+            let text = document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML = 
+            text.replace("javascript", "HTML");
+        }
+        //replace hanya mengganti string pertama yang match
+        //replace memunculkan string baru
+        //replace tidak mengubah string yang dipanggil
+
+        //replace CASE SENSITIVE
+        //gunakan /blabla/i agar tidak case sensitive
+        //gunakan /blabla/g agar yang terreplace adalah semua string yang sesuai
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+        //toUpperCase()
+        //toLowerCase()
+        let blabla = "CemOnG";
+        let blabla2 = blabla.toUpperCase();
+        document.getElementById("demo3").innerHTML = blabla2;
+    </script>
+
+    <p id = "demo4"></p>
+
+    <script>
+        //concat() menggabungkan 2 atau lebih string
+        let text1 = "cemong";
+        let text2 = "bontet";
+        let text3 = text1.concat(" ", text2);
+        document.getElementById("demo4").innerHTML = text3;
+        //selain menggunakan <,> , bisa gunakan <+> 
+    </script>
+
+    <p id = "demo5"></p>
+    <script>
+        //trim() digunakan untuk membuang whitespace sebuah string
+        //trimStart() akan membuag whitespace sebuah string di awal saja   
+        //trinEnd() akan membuang whitespace sebuah string di akhir sja
+
+        let string1 = "      hello         ";
+        let string2 = text4.trim();
+        let text4 = string1.length;
+        let text5 = string2.length;
+        document.getElementById("demo5").innerHTML = "Text pada text4 berjumlah " + text4 + " huruf";
+    </script>
+
+    <p id = "demo6">1234</p>
+    <p>Tipe data di atas adalah string dan nomor</p>
+    <p id = "demo7">1234</p>
+    <p>Tipe data di atas adalah string</p>
+    <p id = "demo8">1234</p>
+    <p>Tipe data di atas adalah string dan menggunakan padding di akhir</p>
+    <script>
+        //blabla.padStart(totalLeter, filling)
+        //blabla.padEnd(totalLeter, filling)
+        let text6 = document.getElementById("demo6").innerHTML;
+        document.getElementById("demo6").innerHTML = text6.padStart(10, "0");
+
+        let numb = document.getElementById("demo7").innerHTML;
+        let numbToText = numb.toString();
+        document.getElementById("demo7").innerHTML = numbToText.padStart(10, "0");
+
+        let numb2 = document.getElementById("demo8").innerHTML;
+        let numbToText2 = numb.toString();
+        document.getElementById("demo8").innerHTML = numbToText2.padEnd(10, "0");
+    </script>
+
+    <!-----------------Extracting String Characters------------------>
+    <p id = "demo9"></p>
+    <p id = "demo10"></p>
+    <p id = "demo11"></p>
+
+    <script>
+        //charAt(index) utk memunculkan karakter pada index tertentu
+        //charCodeAt(index) utk memunculkan unicode karakter pada index tertentu        
+        let text7 = "Cemmong";
+        let text8 = text7.charAt(0);
+        document.getElementById("demo9").innerHTML = text8;
+        let text9 = text7.charCodeAt(0);
+        document.getElementById("demo10").innerHTML = text9;
+
+        //selain menggunakan charAt(index), bisa dgn blabla[index]
+        let text10 = text7[0];
+        document.getElementById("demo11").innerHTML = text10;
+    </script>
+
+    <!------------Convert string to array-------------->
+    <p id = "demo12"></p>
+    <p id = "demo13"></p>
+    <p id = "demo14"></p>
+
+    <script>
+        //text.split(splitter) digunakan untuk mengkonversi string menjadi array
+        let text11 = "a,b,c,d,e,f";
+        const myArray = text11.split(",");
+        document.getElementById("demo12").innerHTML = myArray[4];
+    </script>
+
+
+
+</body>
+</html>

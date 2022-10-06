@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Array</h1><br>
+
+    <h3>Creating an Array</h3>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p><br>
+    <script>
+        const cat = ["Cemong", "Bontet", "Kimi"];
+        const cars = []
+        cars[0] = "Toyota";
+        cars[1] = "Mitsubishi";
+        cars[2] = "Lexus";
+        const days = new Array("Sunday", "Monday", "Tuesday");
+        document.getElementById("demo1").innerHTML = cat;
+        document.getElementById("demo2").innerHTML = cars;
+        document.getElementById("demo3").innerHTML = days;
+    </script>
+
+    <h3>Array inside an Array</h3>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        // Array = berisikan number
+        // Objects = berisikan string
+        // Avoid using new Array() 
+        const array = [cat, cars, days];
+        document.getElementById("demo4").innerHTML = array;
+        document.getElementById("demo5").innerHTML = Array.isArray(array);
+        document.getElementById("demo6").innerHTML = days instanceof Array;
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            width: 100%;
+            height: 100vh;
+            padding: 30px;
+        }
+
+        .content1 {
+            width: 100%;
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--
+        Events adalah reaksi yang dibuat oleh javascript ketika terjadi sesuatu pada HTML
+    -->
+    <div content1>
+        <h1>Tombol </h1> 
+        <button onclick="myFunction()">Show date</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function myFunction () {
+            document.getElementById('demo').innerHTML = Date();
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>

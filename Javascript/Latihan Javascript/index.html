@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/index.css">-->
+</head>
+<body style="text-align: center; display: block;">
+    <header class="header">
+    </header>
+
+    <div class="content">
+        <h1>Displaying Output</h1>
+        <h2 id="satu">one</h2>
+        <h2 id="dua">two</h2>
+        <h2 id="tiga">three</h2>
+        <h2 id="empat">four</h2>
+        
+        <!--
+            Writing into an HTML element, using innerHTML.
+            Writing into the HTML output using document.write().
+            Writing into an alert box, using window.alert().
+            Writing into the browser console, using console.log().
+        -->
+
+        <!--
+            JavaScript statements are composed of:
+            Values, Operators, Expressions, Keywords, and Comments.
+        -->
+        
+    </div>
+
+    <script>
+        document.getElementById("satu").innerHTML="Output using innerHTML";
+        document.write('Output using document.write()');
+        function myFunction() {
+            document.getElementById("dua").innerHTML="Output using innerHTML with function and button";
+        };
+        //alert('Ini adalah window alert');
+    </script>
+
+    <br>
+
+    <button type="button" onclick=myFunction()>This will change "two"</button>
+    <button onclick=print(666)>aaaaa</button>
+
+    <!--4 Ways to Declare a JavaScript Variable:
+    Using var (digunakan untuk Java versi lama, lebih aman bisa dipake semua)
+    Using let (digunakan untuk Java versi baru. dipake jika nilai variabel bisa berubah)
+    Using const (digunakan untuk Java versi baru juga. digunakan utk general rule. nilainya statis)
+    Using nothing-->
+    <script>
+        let x = 4;
+        let y = 9;
+        let z = x * y;
+        function functionMath() {
+            document.getElementById('five').innerHTML=z;
+        }
+    </script>
+    
+    <br>
+
+    <h2 id="five"></h2>
+
+    <button onclick=functionMath()>x * y math operation </button>
+
+    <!--
+        dengan menggunakan var, sebuah variabel bisa dideklarasikan kembali tanpa value tanpa kehilangan value
+        dengan menggunakan let, apabila variabel dideklarasikan kembali tapi tak ada value, amak tidak akan works
+    -->
+
+    <h2 id="letvar"></h2>
+    <h2 id="letvar2"></h2>
+
+    <script>
+        var catName = "Cemong";
+        var catName;
+        document.getElementById("letvar").innerHTML = catName;
+
+        //let carName = "Hyundai";
+        //let carName;
+        //document.getElementById("letvar").innerHTML = carName;
+    </script>  
+
+    <!--
+        menjumlahkan string dengan angka menggunakan let akan membuat angka menjadi string
+        menjulahkan angka dengan string menggunakan let akan membuat angka terjumlahkan, kemudian menyatu dengan string
+    -->
+
+    <h2 id="stringnumber"></h2>
+    <h2 id="stringnumber2"></h2>
+    <script>
+        let a = "3" + 5 + 6;
+        let b = 5 + 6 + "3";
+        document.getElementById('stringnumber').innerHTML = a;
+        document.getElementById('stringnumber2').innerHTML = b;
+
+    </script>
+
+    <!--
+        javascript menganggap $ sebagai variabel
+    -->
+
+    <!-- 
+        block scope: { }
+        let yang ada dalam block scope tak dapat digunakan di luar scope
+        var tidak dapat berada dalam block scope
+        var yang ada pada block scope berbeda akan memiliki nilai yg berubah (mengikuti yang ada dalam block scope)
+        solusinya, gunakan let. nilai akan berbeda pada block scope berbeda
+
+    -->
+
+    <!--
+        redclaring menggunakan var akan mengganti value menjadi value yang paling terakhir ditulis
+        redeclaring menggunakan let tidak diperbolehkan
+    -->
+
+    <!--
+        untuk mendeklarasikan const, harus dengan value
+        const digunakan untuk mendeklarasikan array, object, function, regexp
+        meskipun konstan, const bisa digunakan untuk menmanipulasi isi dari array, properti (style)
+    -->
+
+    <script>
+        const namaKucing = ["cemong", "bontet", "kimi"];
+        namaKucing[0] = "taki";
+        namaKucing.push("Yello");
+
+        console.log(namaKucing);
+
+    </script>
+
+    <!--
+        redeclaring const diperbolehkan. pada scope berbeda, nilai akan berbeda (seperti let)
+    -->
+
+    <!--
+        operator
+    -->
+    <p id="increanment"></p>
+
+    <script>
+        let d = 5;
+        d++;
+        let e = d;
+        document.getElementById('increanment').innerHTML = e;
+    </script>
+
+
+
+
+
+
+</body>
+</html>

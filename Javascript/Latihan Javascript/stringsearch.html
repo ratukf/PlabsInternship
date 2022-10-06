@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript String Search</h1>
+    <h3>
+        <ul> JavaScript Search Method
+            <li>indexOf()</li>
+            <li>lastIndexOf()</li>
+            <li>startsWith()</li>
+            <li>endsWith()</li>
+        </ul>
+    </h3>
+
+    <h2>String indexOf()</h2>
+    <p>Tentukan dimana indeks kata 'dimana' berada dgn indexOf()</p>
+    <p id = "demo1"></p><br>
+    <p>Tentukan dimana indeks kata 'dimana' berada dgn lastIndexOf()</p>
+    <p id="demo2"></p><br>
+    <p>Dimulai dari 15, dimana indeks kata 'dimana' berada</p>
+    <p id="demo3"></p><br>
+    <script>
+        //indexOf("kata")
+        let text1 = "Tentukan dimana indeks kata 'dimana' berada";
+        document.getElementById("demo1").innerHTML = text1.indexOf("dimana");
+        document.getElementById("demo2").innerHTML = text1.lastIndexOf("dimana");
+        //apabila tidak ditemukan maka akan menghasilkan -1
+        //indexof("kata",indexAwalan)
+        document.getElementById("demo3").innerHTML = text1.indexOf("dimana", 15);
+
+    </script>
+
+    <h2>String search()</h2>
+    <p id="demo4"></p><br>
+    <script>
+        //search("kata") untuk mencari indeks pertama kata yang ditemukan
+        //indexOf() hampir sama dengan search()
+        //search() hanya bisa mengambil argumen pertama
+        document.getElementById("demo4").innerHTML = text1.search("dimana");
+    </script>
+
+    <h2>String match()</h2>
+    <p id="demo5"></p>
+    <p id="demo6"></p><br>
+    <script>
+        //match() memunculkan string yang sama sebagai array
+        let text2 = "The rain in SPAIN stays mainly in the plain";
+        document.getElementById("demo5").innerHTML = text2.match(/ain/g);  
+        document.getElementById("demo6").innerHTML = text2.match(/ain/gi);       
+    </script>
+
+    <!-- Regular expression = regexp. Yaitu nilai yang dicari -->
+
+    <h2>String includes()</h2>
+    <p id = "demo7"></p>
+    <p id = "demo8"></p><br>
+    <script>
+        //includes() memiliki nilai boolean
+        //includes(blabla, index) mencari kata pada index tertentu
+        //not supported untuk internet explorer
+        document.getElementById("demo7").innerHTML = text2.includes("rain");
+        document.getElementById("demo8").innerHTML = text2.includes("rain",12);
+    </script>
+
+    <h2>String startsWith()</h2>
+    <p id = "demo9"></p>
+    <p id = "demo10"></p><br>
+    <script>
+        //startsWith() memiliki nilai boolean
+        document.getElementById("demo9").innerHTML = text2.startsWith("The");
+        document.getElementById("demo10").innerHTML = text2.startsWith("SPAIN", 12);
+    </script>
+
+    <h2>String endsWith()</h2>
+    <p id = "demo11"></p>
+    <p id = "demo12"></p><br>
+    <script>
+        //endsWith() memiliki nilai boolean
+        document.getElementById("demo11").innerHTML = text2.endsWith("plain");
+        document.getElementById("demo12").innerHTML = text2.endsWith("SPAIN", 17);
+    </script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

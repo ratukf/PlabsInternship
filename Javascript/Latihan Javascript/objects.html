@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <p id='demo'></p>
+
+    <script>
+        const cemong = {
+            warna: "Calico",
+            usia: 3,
+            beratBadan: 4.5 
+        }
+
+        function myFunction() {
+            return "Cemong berusia " + cemong.usia + " " + "tahun";
+        }
+        
+        document.getElementById('demo').innerHTML = myFunction();
+        //bisa gunakan this.usia instead of cemong.usia jika syntax ada pada scope yang sama
+        //jadi, this mmerujuk kepada object
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>

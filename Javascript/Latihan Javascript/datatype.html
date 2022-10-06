@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+</head>
+<body>
+    <p id="x"></p>
+    <p id="y"></p>
+    <p id="z"></p>
+
+    <script>
+        let x = 2e5; 
+        let y = 2e-6;  //pada javascript dapat menggunakan scientific notation
+        document.getElementById("x").innerHTML = x;
+        document.getElementById("y").innerHTML = y;
+        document.getElementById("z").innerHTML = (x!=y);
+    </script>
+
+    <script>
+        const kucing = ["cemong", "bontet", "kimi"]; 
+        //ini dinamakan dengan array
+        // indeks array zero-based (mulai dari nol)
+
+        const profilKucing = {nama:"cemong", age: 3, eyecolor:"greenYellowish"};
+        // ini dinamakan dengan object
+    </script>
+
+    <p id="cobaTypeOf"></p>
+
+    <script>
+        document.getElementById("cobaTypeOf").innerHTML = (typeof 0) + " " + (typeof "cemong");
+        // typeof digunakan untuk menunjukkan jenis data
+    </script>
+
+</body>
+</html>
